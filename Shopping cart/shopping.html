@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+    <script type="text/javascript" src="cartfunc.js"></script>
+    <title>Shopping</title>
+</head>
+<body>
+    <header>
+        <p><b>Shop-ur-way</b></p>
+    </header>
+<div class="main-content">
+    <div class="container">
+        <div class="card" id="item1">
+            <img src="images/benchesschool.jpg">
+            <div class="title">BENCHES</div>
+            <div>
+                <label>Quantity:</label>
+                <select>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+            <button onclick="addToCart(item1)">Add to card</button>
+        </div>
+        <div class="card" id="item2">
+            <img src="images/offcab.jpg">
+            <div class="title">Storage Cabinets</div>
+            <div>
+                <label>Quantity:</label>
+                <select>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+            <button onclick="addToCart(item2)">Add to card</button>
+        </div>
+        <div class="card" id="item3">
+            <img src="images/computerlowend.jpg">
+            <div class="title">Low-end desktop PC</div>
+            <div>
+                <label>Quantity:</label>
+                <select>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+            <button onclick="addToCart(item3)">Add to card</button>
+        </div><div class="card" id="item4">
+            <img src="images/chairtablecom.jpg">
+            <div class="title">Chair table Combo</div>
+            <div>
+                <label>Quantity:</label>
+                <select>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+            <button onclick="addToCart(item4)">Add to card</button>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <div class="title"> CART</div><hr/>
+        <div id="title"></div>
+    </div>
+</div>
+<footer>
+    <button id="finalbtn" onclick="chngtext()">Place Order</button> 
+    <a id="paybtn" style="background-color: goldenrod;border-width: 2px;
+    border-color: black; border-style: ridge;"></a>
+</footer>
+</body>
+</html>

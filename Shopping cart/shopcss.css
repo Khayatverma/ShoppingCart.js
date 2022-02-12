@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}*
+
+header{
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 8vw;
+}
+.main-content{
+    display:flex;
+    flex-direction: row;
+}
+.container{
+    margin:40px;
+    width:max-content;
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    border:black 4px ridge;
+    text-align: center;
+    display: inline-block;
+    margin:5px;
+    width: max-content;
+    margin: 20px;
+    height: max-content;
+}
+.card img{
+    width:200px;
+    border: ridge black 2px;
+    margin:8px;
+
+}
+.title{
+    font-weight: bold;
+    margin:20px;
+
+}
+button{
+    border:2px solid black;
+    background-color: goldenrod;
+    margin:20px;
+    padding:5px 10px;
+
+}
+.card:hover{
+    box-shadow: 0 0 5px 5px #e1701a inset;
+}
+.cart{
+    width:250px;
+    text-align:center;
+    border:4px ridge black;
+    overflow-y:scroll;
+    margin-top:20px;
+    max-height: 15cm;
+    height: 100%;
+}
+.cart-img > img{
+    width:150px;
+}
+footer{
+    background-color: grey;
+}
+@media(max-width:917px){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .cart{margin-left:50px;}
+
+}
+
